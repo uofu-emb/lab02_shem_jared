@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-#include "FreeRTOS.h"
-#include "task.h"
+#include <FreeRTOS.h>
+#include <task.h>
 
-#include "pico/stdlib.h"
-#include "pico/multicore.h"
-#include "pico/cyw43_arch.h"
+#include <pico/stdlib.h>
+#include <pico/multicore.h>
+#include <pico/cyw43_arch.h>
 #include "handlers.h"
 
 #define LED_DELAY 1000
