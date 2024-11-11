@@ -8,11 +8,11 @@
 #include <pico/cyw43_arch.h>
 
 int count = 0;
-bool on = false;
+//bool on = false;
 
-void blink_led() {
-    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, on);
-    if (count++ % 11) on = !on;
+void blink_led(bool *on) {
+    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, *on);
+    if (count++ % 11) *on = !*on;
 }
 
 char change_case(char c) {
