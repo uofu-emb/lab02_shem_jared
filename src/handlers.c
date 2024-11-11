@@ -11,7 +11,6 @@
 #define LED_DELAY 1000
 
 bool on = false;
-//bpointer = &on;
 
 void blink_task(__unused void *params) {
     hard_assert(cyw43_arch_init() == PICO_OK);
@@ -24,9 +23,9 @@ void blink_task(__unused void *params) {
 void main_task(__unused void *params) {
     xTaskCreate(blink_task, "BlinkThread",
                 BLINK_TASK_STACK_SIZE, NULL, BLINK_TASK_PRIORITY, NULL);
-    char c;
-    while(c = getchar()) {
-        c = change_case(c);
-        putchar(c);
+    char *c;
+    while(*c = getchar()) {
+        *c = change_case(*c);
+        putchar(*c);
     }
 }

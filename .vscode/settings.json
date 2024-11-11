@@ -40,6 +40,8 @@
     "files.associations": {
         "cyw43_arch.h": "c",
         "multicore.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "task.h": "c",
+        "stdlib.h": "c"
     }
 }
