@@ -23,9 +23,9 @@ void blink_task(__unused void *params) {
 void main_task(__unused void *params) {
     xTaskCreate(blink_task, "BlinkThread",
                 BLINK_TASK_STACK_SIZE, NULL, BLINK_TASK_PRIORITY, NULL);
-    char *c;
-    while(*c = getchar()) {
-        *c = change_case(*c);
-        putchar(*c);
+    char c;
+    while(c = getchar()) {
+        change_case(&c);
+        putchar(c);
     }
 }

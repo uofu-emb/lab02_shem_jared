@@ -7,7 +7,7 @@
 
 void blink_led(bool *on);
 
-char change_case(char c);
+void change_case(char *c);
 
 void blink_task(void *params);
 
