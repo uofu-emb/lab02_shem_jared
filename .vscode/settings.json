@@ -44,6 +44,7 @@
         "task.h": "c",
         "stdlib.h": "c",
         "freertos.h": "c",
-        "handlers.h": "c"
+        "handlers.h": "c",
+        "unity.h": "c"
     }
 }

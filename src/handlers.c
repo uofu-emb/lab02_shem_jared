@@ -26,7 +26,7 @@ void main_task(__unused void *params) {
                 BLINK_TASK_STACK_SIZE, NULL, BLINK_TASK_PRIORITY, NULL);
     char c;
     while(c = getchar()) {
-        change_case(&c);
+        c = change_case(c);
         putchar(c);
     }
 }

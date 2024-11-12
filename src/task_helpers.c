@@ -19,11 +19,13 @@ void blink_led(bool *on, int *count) {
     }
 }
 
-void change_case(char *c) {
-    if (*c <= 'z' && *c >= 'a') {
-        *c = (*c - 32);
+char change_case(char c) {
+    if (c <= 'z' && c >= 'a') {
+        c = (c - 32);
     }
-    else if (*c >= 'A' && *c <= 'Z') {
-        *c = (*c + 32);
+    else if (c >= 'A' && c <= 'Z') {
+        c = (c + 32);
     }
+
+    return c;
 }
