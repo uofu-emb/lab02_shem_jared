@@ -42,6 +42,8 @@
         "multicore.h": "c",
         "stdio.h": "c",
         "task.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "freertos.h": "c",
+        "handlers.h": "c"
     }
 }

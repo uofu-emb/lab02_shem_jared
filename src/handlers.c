@@ -11,11 +11,12 @@
 #define LED_DELAY 1000
 
 bool on = false;
+int count = 0;
 
 void blink_task(__unused void *params) {
     hard_assert(cyw43_arch_init() == PICO_OK);
     while (true) {
-        blink_led(&on);
+        blink_led(&on, &count);
         vTaskDelay(LED_DELAY);
     }
 }

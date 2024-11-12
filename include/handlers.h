@@ -5,7 +5,7 @@
 #define MAIN_TASK_STACK_SIZE configMINIMAL_STACK_SIZE
 #define BLINK_TASK_STACK_SIZE configMINIMAL_STACK_SIZE
 
-void blink_led(bool *on);
+void blink_led(bool *on, int *count);
 
 void change_case(char *c);
 
