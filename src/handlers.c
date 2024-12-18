@@ -10,6 +10,7 @@
 
 #define LED_DELAY 1000
 
+// Comments for review cause i messed up
 bool on = false;
 int count = 0;
 
